@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital - Como Não Cair em Golpes Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com Botão de Áudio -->
+    <header class="header">
+        <div class="header-content">
+            <h1>🛡️ Segurança Digital</h1>
+            <p class="subtitle">Aprenda a se proteger contra golpes online</p>
+            <button id="audioBtn" class="audio-btn" title="Clique para ouvir o conteúdo">
+                🔊 Ativar áudio
+            </button>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#tipos">Tipos de Golpes</a></li>
+            <li><a href="#identificar">Como Identificar</a></li>
+            <li><a href="#proteger">Como Se Proteger</a></li>
+            <li><a href="#denuncia">Denunciar</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Seção Inicial -->
+        <section id="inicio" class="section hero-section">
+            <h2>Bem-vindo à sua defesa contra golpes digitais</h2>
+            <p>A cada dia, milhares de pessoas caem em golpes online. Mas com conhecimento, você pode se proteger. Este guia foi criado para ensinar você a identificar, evitar e denunciar fraudes digitais.</p>
+            <div class="alert alert-warning">
+                <strong>⚠️ Atenção:</strong> Se você já foi vítima de golpe, denuncie imediatamente em delegacias online ou plataformas especializadas.
+            </div>
+        </section>
+
+        <!-- Seção de Tipos de Golpes -->
+        <section id="tipos" class="section">
+            <h2>Principais Tipos de Golpes Online</h2>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-icon">🎣</div>
+                    <h3>Phishing</h3>
+                    <p>Mensagens falsas (e-mail, SMS, WhatsApp) se passando por empresas conhecidas pedindo dados pessoais ou bancários. O criminoso imita o layout e logo da empresa real.</p>
+                    <div class="card-example">
+                        <strong>Exemplo:</strong> "Seu banco detectou atividade suspeita. Clique aqui para verificar sua conta."
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Golpe do Falso Investimento</h3>
+                    <p>Promessas de ganhos rápidos e fáceis em criptomoedas, ações ou esquemas de pirâmide. Pedem depósito inicial que nunca retorna.</p>
+                    <div class="card-example">
+                        <strong>Exemplo:</strong> "Ganhe R$5.000 em 7 dias! Invista apenas R$500 agora."
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-icon">🤳</div>
+                    <h3>Golpe do Falso Trabalho Remoto</h3>
+                    <p>Ofertas de emprego fácil pela internet com salários altos. Pedem dados pessoais ou pagamento de taxa para "processamento".</p>
+                    <div class="card-example">
+                        <strong>Exemplo:</strong> "Trabalhe de casa! Ganhe R$3.000/mês. Pague R$150 para começar."
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3>Golpe do Cartão de Crédito</h3>
+                    <p>Clonagem de cartão ou roubo de dados através de links maliciosos, QR codes falsificados ou compras em sites fraudulentos.</p>
+                    <div class="card-example">
+                        <strong>Exemplo:</strong> "Confirme seu cartão aqui: bit.ly/banco-seguro (link falso)"
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Engenharia Social</h3>
+                    <p>Criminosos fingem ser atendentes de banco, suporte técnico ou amigos para convencer você a revelar dados ou fazer transferências.</p>
+                    <div class="card-example">
+                        <strong>Exemplo:</strong> "Olá, sou da TI do seu banco. Preciso de sua senha para verificar anomalias."
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="card-icon">🎬</div>
+                    <h3>Deepfake e Vídeos Falsos</h3>
+                    <p>Vídeos manipulados de pessoas famosas ou conhecidas pedindo dinheiro. Parecem reais mas são criados com IA.</p>
+                    <div class="card-example">
+                        <strong>Exemplo:</strong> Vídeo fake de celebridade prometendo dar dinheiro se você enviar R$100.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Como Identificar -->
+        <section id="identificar" class="section">
+            <h2>Como Identificar um Golpe</h2>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" id="check1" disabled>
+                    <label for="check1">
+                        <strong>✋ Pressão urgente:</strong> Mensagens que pedem ação imediata ("Clique AGORA!", "Você tem 1 hora!")
+                    </label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="check2" disabled>
+                    <label for="check2">
+                        <strong>🔗 URLs suspeitas:</strong> Links encurtados (bit.ly, tinyurl) ou domínios parecidos mas com erros (amazom.com.br em vez de amazon.com.br)
+                    </label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="check3" disabled>
+                    <label for="check3">
+                        <strong>📧 Erros no email:</strong> Endereço de e-mail estranho, formatação ruim, logo de baixa qualidade ou português com erros
+                    </label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="check4" disabled>
+                    <label for="check4">
+                        <strong>💰 Ofertas demais:</strong> Ganhos muito grandes, condições muito fáceis ou preços muito baixos
+                    </label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="check5" disabled>
+                    <label for="check5">
+                        <strong>🚨 Ameaças:</strong> "Sua conta será bloqueada", "Você será processado", "Dados vazados"
+                    </label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="check6" disabled>
+                    <label for="check6">
+                        <strong>🔐 Pedido de dados sensíveis:</strong> Ninguém legítimo pede senha, CPF ou dados bancários por mensagem
+                    </label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="check7" disabled>
+                    <label for="check7">
+                        <strong>🔍 Perfil suspeito:</strong> Perfis novos nas redes sociais, sem foto de perfil clara, ou copiando celebridades
+                    </label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="check8" disabled>
+                    <label for="check8">
+                        <strong>📞 Contato estranho:</strong> Desconhecidos pedindo pix, transferência ou dados pessoais
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Proteção -->
+        <section id="proteger" class="section">
+            <h2>8 Passos Para Se Proteger</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Verifique o URL</h3>
+                    <p>Antes de clicar em um link, passe o mouse sobre ele e veja o endereço completo. Procure por "https://" e o nome correto da empresa. Desconfia de links encurtados em mensagens suspeitas.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Contate a empresa diretamente</h3>
+                    <p>Se receber mensagem de um banco ou loja, ligue para o número oficial (no verso do cartão ou site) em vez de clicar no link. Assim você confirma se é real.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Nunca compartilhe senha ou CPF</h3>
+                    <p>Empresas legítimas NUNCA pedem esses dados por e-mail, SMS ou WhatsApp. Se pedirem, é golpe. Nem mesmo IT de verdade pede senha.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Use autenticação de dois fatores</h3>
+                    <p>Ative 2FA em email, redes sociais e banco. Isso exige código extra enviado no seu celular, mesmo que o criminoso tenha sua senha.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Desconfie de ofertas demais</h3>
+                    <p>Se parece bom demais para ser verdade, provavelmente é. Ganhos rápidos, empregos fáceis e preços incríveis são sinais de alerta.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <h3>Atualize seu dispositivo</h3>
+                    <p>Mantenha celular, computador e apps atualizados. Atualizações corrigem falhas de segurança que criminosos exploram.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <h3>Use antivírus confiável</h3>
+                    <p>Instale um antivírus reconhecido (Windows Defender, Kaspersky, Avast). Ele detecta links maliciosos antes de você clicar.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">8</div>
+                    <h3>Duvide e pergunte</h3>
+                    <p>Quando tiver dúvida, procure informações no site oficial, pergunte para amigos confiáveis ou contate a empresa. Dúvida é saudável!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Denúncia -->
+        <section id="denuncia" class="section">
+            <h2>Fui Vítima de Golpe! O Que Fazer?</h2>
+            <div class="alert alert-danger">
+                <strong>⚠️ IMPORTANTE:</strong> Tempo é ouro! Quanto mais rápido agir, mais chance de recuperar seu dinheiro.
+            </div>
+
+            <div class="denunciation-steps">
+                <div class="denunciation-card">
+                    <h3>1️⃣ Aja RÁPIDO</h3>
+                    <p>Se foi transferência via Pix ou TED, bloqueie a chave Pix imediatamente no app do banco. Para cartão, ligue logo para seu banco reportar fraude.</p>
+                </div>
+
+                <div class="denunciation-card">
+                    <h3>2️⃣ Guarde provas</h3>
+                    <p>Screenshots de mensagens, emails, prints de telas, nomes de usuários. Tudo serve como prova.</p>
+                </div>
+
+                <div class="denunciation-card">
+                    <h3>3️⃣ Registre B.O. (Boletim de Ocorrência)</h3>
+                    <p>Acesse a Delegacia Online do seu estado (www.delegaciaonline.com.br) ou vá presencialmente a uma delegacia. Leve suas provas.</p>
+                </div>
+
+                <div class="denunciation-card">
+                    <h3>4️⃣ Denuncie ao Banco</h3>
+                    <p>Contate seu banco imediatamente. Eles têm processos para investigar fraudes e às vezes conseguem bloquear transferências antes de serem sacadas.</p>
+                </div>
+
+                <div class="denunciation-card">
+                    <h3>5️⃣ Denuncie à Polícia Federal</h3>
+                    <p>Para crimes virtuais maiores, acesse a Central de Denúncias da PF (www.pf.gov.br) e faça sua denúncia online.</p>
+                </div>
+
+                <div class="denunciation-card">
+                    <h3>6️⃣ Denuncie em plataformas</h3>
+                    <p><strong>Telegram:</strong> Denuncie canais/bots fraudulentos ao @notoscam <br><strong>Facebook/Instagram:</strong> Use opção "Denunciar fraude" nos perfis falsificadores</p>
+                </div>
+
+                <div class="denunciation-card">
+                    <h3>7️⃣ Contate agências especializadas</h3>
+                    <p><strong>SaferNet:</strong> www.safernet.org.br (crimes contra crianças) <br><strong>Ouvidoria Banco Central:</strong> Para fraudes financeiras</p>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>📞 Números úteis:</strong><br>
+                Polícia Federal: 194<br>
+                Disque Denúncia: 100<br>
+                Banco Central: 0800 022 2322
+            </div>
+        </section>
+
+        <!-- Seção Extra: Dicas Rápidas -->
+        <section class="section tips">
+            <h2>Dicas de Ouro 🌟</h2>
+            <ul class="tips-list">
+                <li>🚫 <strong>NÃO clique</strong> em links de mensagens não solicitadas</li>
+                <li>🔒 <strong>SEMPRE use</strong> senhas fortes (maiúscula + minúscula + número + símbolo)</li>
+                <li>👥 <strong>NÃO compartilhe</strong> seu número de identificação com estranhos</li>
+                <li>🤔 <strong>PENSE antes</strong> de transferir dinheiro para desconhecidos</li>
+                <li>📲 <strong>ATIVE</strong> notificações do seu banco para alertas</li>
+                <li>🔍 <strong>PESQUISE</strong> a empresa antes de fazer compras online</li>
+                <li>💬 <strong>CONVERSE</strong> com família/amigos se está em dúvida</li>
+                <li>📱 <strong>NUNCA dê seu celular</strong> para estranhos inserirem código</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Segurança Digital - Educação para Proteção Online</p>
+            <p>Desenvolvido como material educativo | Compartilhe conhecimento, combata golpes</p>
+            <div class="footer-links">
+                <a href="#inicio">Voltar ao topo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
